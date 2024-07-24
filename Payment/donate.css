@@ -1,0 +1,15 @@
+.payment-success {
+  text-align: center;
+}
+
+.payment-success h1 {
+  color: green;
+}
+
+.feedback-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+}
