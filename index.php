@@ -16,7 +16,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ede-Orphanage management System</title>
+    <title>Eden-Orphanage management System</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -229,7 +229,7 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/orphanage1.jpg" alt="Image">
+                    <img class="w-100" src="assets/orphanage1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Your trusted Orphanage management System </h5>
@@ -240,7 +240,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/donation.jpg" alt="Image">
+                    <img class="w-100" src= "assets/donation.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Your trusted Orphanage management System </h5>
@@ -271,7 +271,7 @@
         <div class="row gx-5">
             <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded" src="img/rumah.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded" src="assets/rumah.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -424,7 +424,7 @@
         <div class="row g-0">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="client.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="assets/client.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 bg-dark p-5">
@@ -436,7 +436,7 @@
                     <div class="testimonial-item">
                         <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>The owner has the satisfaction of helping children in desperate need of love and caring. If they are in it to make money then they are the worst of caregivers</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="client1.jpg" alt="">
+                            <img class="img-fluid rounded-circle" src="assets/hj nasri.jpg" alt="">
                             <div class="ps-4">
                                 <h5 class="text-uppercase text-light">Cikgu Nasir</h5>
                                 <span class="text-uppercase text-secondary">Owner</span>
@@ -446,9 +446,9 @@
                     <div class="testimonial-item">
                         <p class="fs-4 fw-normal text-light mb-4"><i class="fa fa-quote-left text-primary me-3"></i>The owner has the satisfaction of helping children in desperate need of love and caring. If they are in it to make money then they are the worst of caregivers</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="client1.jpg" alt="">
+                            <img class="img-fluid rounded-circle" src="assets/hj nasri.jpg" alt="">
                             <div class="ps-4">
-                                <h5 class="text-uppercase text-light">Client Name</h5>
+                                <h5 class="text-uppercase text-light">Client Names</h5>
                                 <span class="text-uppercase text-secondary">Profession</span>
                             </div>
                         </div>

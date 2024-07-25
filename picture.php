@@ -101,47 +101,47 @@
     <h1>Gallery of Donations</h1>
 <div class="pict">
   <div class="boxes">
-    <img  src="img1/child.jpg" alt='' class="bw">
+    <img  src="assets/gallery/child.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/food.jpg" alt='' class="bw">
+    <img  src="assets/gallery/food.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/gift.jpg" alt='' class="bw">
+    <img  src="assets/gallery/gift.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/Quran.jpg" alt=''class="bw">
+    <img  src="assets/gallery/Quran.jpg" alt=''class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/Rice.jpg" alt=''class="bw">
+    <img  src="assets/gallery/Rice.jpg" alt=''class="bw">
     <p></p>
   </div >
   <div class="boxes">
-    <img  src="img1/vege.jpg" alt='' class="bw">
+    <img  src="assets/gallery/vege.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/baby.jpg" alt='' class="bw">
+    <img  src="assets/gallery/baby.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/student.jpg" alt='' class="bw">
+    <img  src="assets/gallery/student.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/sembako.jpg" alt='' class="bw">
+    <img  src="assets/gallery/sembako.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/cikgu.jpg" alt='' class="bw">
+    <img  src="assets/gallery/cikgu.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="img1/rices.jpg" alt='' class="bw">
+    <img  src="assets/gallery/rices.jpg" alt='' class="bw">
     <p></p>
   </div>
 </div>

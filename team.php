@@ -219,7 +219,7 @@
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src="yusri.jpg">
+            <img class="team-img" src="assets/yusri.jpg">
           </div>
           <p class="text-blk name">
             Yusri
@@ -246,7 +246,7 @@
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src="rafly.jpg">
+            <img class="team-img" src="assets/rafly.jpg">
           </div>
           <p class="text-blk name">
             Rafly
@@ -273,7 +273,7 @@
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src="zidan mabrur.JPG">
+            <img class="team-img" src="assets/zidan mabrur.JPG">
           </div>
           <p class="text-blk name">
             Zidan Mabrur

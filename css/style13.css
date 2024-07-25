@@ -129,7 +129,7 @@ h6,
 }
 
 .bg-hero {
-    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/radhatul_maryam.jpeg) center no-repeat;
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../assets/radhatul_maryam.jpeg) center no-repeat;
     background-size: cover;
 }
 
