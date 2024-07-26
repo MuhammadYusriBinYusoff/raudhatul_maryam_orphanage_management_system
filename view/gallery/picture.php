@@ -1,3 +1,9 @@
+<?php 
+
+include '../../widget/widget.php'; 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,130 +24,68 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/collect.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/style.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/collect.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary text-uppercase">Gallery</h1>
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">eden@gmail.com</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">019-752 0966</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">Gymster</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <div class="nav-item dropdown">
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                    <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                </div>
-                            </div>
-                            <a href="picture.php" class="nav-item nav-link active">Donations Photo</a>
-                        </div>
-                        
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <?php webBarMenu(); ?>
     <!-- Header End -->
 
     <h1>Gallery of Donations</h1>
 <div class="pict">
   <div class="boxes">
-    <img  src="assets/gallery/child.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/child.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/food.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/food.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/gift.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/gift.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/Quran.jpg" alt=''class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/Quran.jpg" alt=''class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/Rice.jpg" alt=''class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/Rice.jpg" alt=''class="bw">
     <p></p>
   </div >
   <div class="boxes">
-    <img  src="assets/gallery/vege.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/vege.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/baby.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/baby.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/student.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/student.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/sembako.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/sembako.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/cikgu.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/cikgu.jpg" alt='' class="bw">
     <p></p>
   </div>
   <div class="boxes">
-    <img  src="assets/gallery/rices.jpg" alt='' class="bw">
+    <img  src="<?php echo BASE_URL; ?>assets/gallery/rices.jpg" alt='' class="bw">
     <p></p>
   </div>
 </div>
@@ -234,13 +178,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/easing/easing.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/waypoints/waypoints.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/counterup/counterup.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?php echo BASE_URL; ?>js/main.js"></script>
 </body>
 
 </html>

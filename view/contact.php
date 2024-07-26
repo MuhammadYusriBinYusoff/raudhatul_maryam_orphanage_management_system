@@ -1,3 +1,9 @@
+<?php 
+
+include '../widget/widget.php'; 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,69 +25,23 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style12.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/style12.css" rel="stylesheet">
     
    
 </head>
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary text-uppercase">Feedback</h1>
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">eden@gmail.com</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">019-752 0966</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="https://www.facebook.com/RaudhatulMaryam/">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">EDEN</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.php" class="nav-item nav-link">Home</a>
-                            <a href="about.php" class="nav-item nav-link">About</a>
-                            <a href="team.php" class="nav-item nav-link">Team</a>
-                            <a href="index.php" class="nav-item nav-link active">Feedback</a>
-                        </div>
-                        
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <?php webBarMenu(); ?>
     <!-- Header End -->
 
 
@@ -90,7 +50,7 @@
         <div class="row py-5">
             <div class="col-12 text-center">
                 <h1 class="display-2 text-uppercase text-white mb-md-4">Contact</h1>
-                <a href="index.php" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
+                <a href="<?php echo BASE_URL; ?>index.php" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
                 <a href="" class="btn btn-light py-md-3 px-md-5">Contact</a>
             </div>
         </div>
@@ -226,17 +186,17 @@ if (isset($_POST['Submit'])) {
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                         <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="<?php echo BASE_URL; ?>index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
 
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-secondary" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            <a class="text-secondary" href="<?php echo BASE_URL; ?>view/contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                         <h4 class="text-uppercase text-light mb-4">Popular Links</h4>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="<?php echo BASE_URL; ?>index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
                             <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
@@ -283,13 +243,13 @@ if (isset($_POST['Submit'])) {
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/easing/easing.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/waypoints/waypoints.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/counterup/counterup.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?php echo BASE_URL; ?>js/main.js"></script>
 </body>
 
 </html>
