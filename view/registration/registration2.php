@@ -1,8 +1,16 @@
+<?php
+session_start();
+
+define('BASE_URL', '/Activity-PHP/raudhatul_maryam_orphanage_management_system/');
+define('CONFIG_URL', '/Activity-PHP/raudhatul_maryam_orphanage_management_system/config.php/');
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>js/bootstrap.js">
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 <title>Registration Form</title>
 
@@ -35,7 +43,7 @@
 					
 					<input type="submit" value="SIGNUP">
 				</form>
-				<p>Don't have an Account? <a href="../login/login/login.html"> Login Now!</a></p>
+				<p>Don't have an Account? <a href="<?php echo BASE_URL; ?>view/login/login.html"> Login Now!</a></p>
 			</div>
 		</div>
 		<!-- copyright -->

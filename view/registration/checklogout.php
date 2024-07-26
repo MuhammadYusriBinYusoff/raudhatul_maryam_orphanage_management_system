@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Start up your PHP Session
- 
+define('BASE_URL', '/Activity-PHP/raudhatul_maryam_orphanage_management_system/');
 
 ?>
 
@@ -28,7 +28,7 @@ unset($_COOKIE["success"]);
 </div>
 <br>
 
-<a href="../index.php" class="button">
+<a href="<?php echo BASE_URL; ?>index.php" class="button">
 		<div class="box">
 		  <span>Back to Main Page</span>
 		  <i class="fas fa-arrow-left"></i>

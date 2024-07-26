@@ -142,19 +142,19 @@ function webBarMenu()
                         if ($_SESSION["Login"] == "YES") {
 
                     ?>
-                            <a href="registration/checklogout.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Log out</a>
+                            <a href="<?php echo BASE_URL; ?>view/registration/checklogout.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Log out</a>
 
                         <?php
                         } else {
 
                         ?>
-                            <a href="registration/registration2.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Register</a>
+                            <a href="<?php echo BASE_URL; ?>view/registration/registration2.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Register</a>
                         <?php
                         }
                     } else {
                         ?>
 
-                        <a href="registration/registration2.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Register</a>
+                        <a href="<?php echo BASE_URL; ?>view/registration/registration2.php" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Register</a>
 
                     <?php
                     }

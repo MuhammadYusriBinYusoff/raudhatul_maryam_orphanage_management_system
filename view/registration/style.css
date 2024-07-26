@@ -106,7 +106,7 @@
   
   /*-- end reset --*/
   body {
-    background-image:url(orphanage3.jpg);
+    background-image:url(../../assets/orphanageimage.jpg);
     background-size:cover;
     background-attachment:fixed;
     /* fallback for old browsers */
