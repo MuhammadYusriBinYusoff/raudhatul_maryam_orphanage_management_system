@@ -1,5 +1,7 @@
-<?php
- session_start();
+<?php 
+
+include '../../widget/widget.php'; 
+
 ?>
 
 <!DOCTYPE html>
@@ -48,143 +50,26 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style12.css" rel="stylesheet">
+    <link href="<?php echo BASE_URL; ?>css/style12.css" rel="stylesheet">
 
     <!-- Template Sendiri -->
-    <link rel="stylesheet" href="reqItems.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>reqItems.css">
 
     
 </head>
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary text-uppercase">Eden</h1>
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">eden@gmail.com</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">+012 345 6789</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">Eden</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.php" class="nav-item nav-link active">Home</a>
-                            <a href="about.php" class="nav-item nav-link">About</a>
-                            <a href="team.php" class="nav-item nav-link">Team</a>
-                                <?php
-                                    if($_SESSION["CATEGORY"]=="admin"){
-
-                                ?>
-                                <a href="registration/adminVerification.php" class="nav-item nav-link">Verification</a>
-                                <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>View Request</a>
-                                    <a href="manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
-                                    <a href="viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
-                                </div>
-                                </div>
-
-                                <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Storage</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
-                                    <a href="editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
-                                </div>
-                            </div>
-
-                                <?php
-                                    }else if($_SESSION["CATEGORY"]=="orphanage"){
-        
-                                ?>
-                                <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="requestDonation.html" class="dropdown-item">Request Donation</a>
-                                    <a href="viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>My Request</a>
-                                    <a href="manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
-                                    <a href="viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
-                                    
-                                </div>
-                                </div>
-
-                                <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Storage</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
-                                    <a href="editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
-                                </div>
-                            </div>
-                                <?php
-                                    }else{
-
-                                ?>
-                                <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>View Request</a>
-                                    
-                                </div>
-                                </div>
-                                <?php
-                                    }
-                                ?>
-                            </div>
-                            <a href="contact.php" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <?php webBarMenu(); ?>
     <!-- Header End -->
 
 
@@ -193,7 +78,7 @@
         <div class="row py-5">
             <div class="col-12 text-center">
                 <h1 class="display-2 text-uppercase text-white mb-md-4">History Session</h1>
-                <a href="index.php" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
+                <a href="<?php echo BASE_URL; ?>index.php" class="btn btn-primary py-md-3 px-md-5 me-3">Home</a>
                 <a href="viewHistory.php" class="btn btn-light py-md-3 px-md-5"><i class="fa fa-history text-primary me-2"></i>History</a>
             </div>
         </div>
@@ -210,7 +95,7 @@
  
     
         <?php
-        require ("config.php"); 
+        require ("../../config.php"); 
         $sql = "SELECT * FROM history";
              $result = mysqli_query($conn, $sql); 
         
@@ -220,7 +105,7 @@
         <!-- Start table tag -->
         <div class = 'request-header'>
             <div class = 'view-info'> 
-            <form method ="post" action ="index.php" name="viewForm">
+            <form method ="post" action ="<?php echo BASE_URL; ?>index.php" name="viewForm">
                 <table width="600" border="1" cellspacing="0" cellpadding="3">
              
                 <!-- Print table heading -->
@@ -347,13 +232,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/easing/easing.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/waypoints/waypoints.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/counterup/counterup.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?php echo BASE_URL; ?>js/main.js"></script>
 </body>
 
 </html>

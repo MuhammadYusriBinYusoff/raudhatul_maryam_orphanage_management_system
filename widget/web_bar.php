@@ -85,17 +85,17 @@ function webBarMenu()
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="requestDonation.html" class="dropdown-item">Request Donation</a>
-                                            <a href="viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>View Request</a>
-                                            <a href="manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
-                                            <a href="viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/requestDonation.php" class="dropdown-item">Request Donation</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>View Request</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
+                                            <a href="<?php echo BASE_URL; ?>view/historyItem/viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
                                         </div>
                                     </div>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Storage</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
-                                            <a href="editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
+                                            <a href="<?php echo BASE_URL; ?>view/storage/addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
+                                            <a href="<?php echo BASE_URL; ?>view/storage/editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
                                         </div>
                                     </div>
                                 <?php
@@ -104,23 +104,23 @@ function webBarMenu()
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="requestDonation.html" class="dropdown-item">Request Donation</a>
-                                            <a href="viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>My Request</a>
-                                            <a href="manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
-                                            <a href="viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/requestDonation.php" class="dropdown-item">Request Donation</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/viewDonation.php" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>My Request</a>
+                                            <a href="<?php echo BASE_URL; ?>view/donation/manageRequest.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
+                                            <a href="<?php echo BASE_URL; ?>view/historyItem/viewHistory.php" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
                                         </div>
                                     </div>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Storage</a>
                                         <div class="dropdown-menu rounded-0 m-0">
-                                            <a href="addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
-                                            <a href="editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
+                                            <a href="<?php echo BASE_URL; ?>view/storage/addItemStorage.php" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
+                                            <a href="<?php echo BASE_URL; ?>view/storage/editStorage.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
                                         </div>
                                     </div>
                                 <?php
                                 } else if ($_SESSION["CATEGORY"] == "donor" || $_SESSION["CATEGORY"] == NULL) {
                                 ?>
-                                    <a href="Payment/Payment.html" class="nav-item nav-link">Payment</a>
+                                    <a href="<?php echo BASE_URL; ?>view/Payment/Payment.html" class="nav-item nav-link">Payment</a>
                                     <a href="<?php echo BASE_URL; ?>view/gallery/picture.php" class="nav-item nav-link">Gallery</a>
                                     <div class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>

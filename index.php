@@ -1,5 +1,5 @@
-<?php 
-include 'widget/widget.php'; 
+<?php
+include 'widget/widget.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ include 'widget/widget.php';
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@ include 'widget/widget.php';
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src= "assets/donation.jpg" alt="Image">
+                    <img class="w-100" src="assets/donation.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Your trusted Orphanage management System </h5>
@@ -69,13 +69,11 @@ include 'widget/widget.php';
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -105,7 +103,7 @@ include 'widget/widget.php';
                             <a class="nav-link text-uppercase text-center w-100 active" data-bs-toggle="pill" href="#pills-1">About Us</a>
                         </li>
                         <li class="nav-item w-50">
-                                <a class="nav-link text-uppercase text-center w-100" data-bs-toggle="pill" href="#pills-2">Why Choose Us</a>
+                            <a class="nav-link text-uppercase text-center w-100" data-bs-toggle="pill" href="#pills-2">Why Choose Us</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -152,7 +150,7 @@ include 'widget/widget.php';
             </div>
             <div class="col-lg-12 col-md-6 text-center">
                 <h1 class="text-uppercase text-light mb-4">"Help humanity"</h1>
-                
+
                 <div class="box1">
                     <a class="button1" href="#popup1">Quick Donate</a>
                 </div>
@@ -163,24 +161,26 @@ include 'widget/widget.php';
                         <a class="close" href="#">&times;</a>
                         <div class="content1">
                             NO.11, Jalan Pulai 54,<br>
-                    Taman Pulai Utama,<br>
-                    81300 Skudai Johor Bahru<br><br>
-                    Maybank account : 551306510355 <br><br>
-                    Thank you For Donate!!
+                            Taman Pulai Utama,<br>
+                            81300 Skudai Johor Bahru<br><br>
+                            Maybank account : 551306510355 <br><br>
+                            Thank you For Donate!!
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
     <!-- Programe Start -->
 
     <!-- Donate as you wish -->
-    <div class ="words">“Whoever takes care of three orphans, then it is like waking up at night and fasting during the day, and like someone who goes out every morning and evening draws his sword to wage jihad in the way of Allah. And later in heaven with me like a brother, like these two fingers, namely the index finger and middle finger."<br>
-         Muhammad ﷺ</div>
+    <div class="quote">
+        “Whoever takes care of three orphans, then it is like waking up at night and fasting during the day, and like someone who goes out every morning and evening draws his sword to wage jihad in the way of Allah. And later in heaven with me like a brother, like these two fingers, namely the index finger and middle finger."
+        <div class="quote-author">Muhammad ﷺ</div>
+    </div>
     <!-- Donate as you wish -->
 
-    
+
 
     <!-- Facts Start -->
     <div class="container-fluid bg-dark facts p-5 my-5">
@@ -234,8 +234,8 @@ include 'widget/widget.php';
     <!-- Facts End -->
 
 
-    
-    
+
+
 
     <!-- Testimonial Start -->
     <div class="container-fluid p-0 my-5">
@@ -278,7 +278,7 @@ include 'widget/widget.php';
     <!-- Testimonial End -->
 
 
-    
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary px-5 mt-5">
@@ -375,6 +375,3 @@ include 'widget/widget.php';
 </body>
 
 </html>
-
-
-
