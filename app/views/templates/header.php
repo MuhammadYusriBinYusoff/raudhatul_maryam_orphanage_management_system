@@ -135,7 +135,7 @@
                     </div>
                 </div>
             <?php else : ?>
-                <a href="<?= BASEURL; ?>/view/Payment/Payment.html" class="nav-item nav-link">Payment</a>
+                <a href="<?= BASEURL; ?>/payment/payment" class="nav-item nav-link">Payment</a>
                 <a href="<?= BASEURL; ?>/home/gallery" class="nav-item nav-link">Gallery</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Donations</a>
