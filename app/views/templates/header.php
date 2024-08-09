@@ -145,7 +145,7 @@
                 </div>
             <?php endif; ?>
         </div>
-        <a href="<?= BASEURL; ?>/view/contact.php" class="nav-item nav-link">Contact</a>
+        <a href="<?= BASEURL; ?>/home/contact" class="nav-item nav-link">Contact</a>
     </div>
     <?php if (isset($_SESSION["Login"]) && $_SESSION["Login"] == "YES") : ?>
         <a href="<?= BASEURL; ?>/authentication/logout" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Log out</a>

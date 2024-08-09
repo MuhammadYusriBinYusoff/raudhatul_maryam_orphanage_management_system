@@ -30,5 +30,12 @@ class Home extends Controller{
        $this->view('templates/footer');
     }
 
+    public function contact()
+    {
+        $this->view('templates/header');
+       $this->view('home/contact');
+       $this->view('templates/footer');
+    }
+
 }
 ?>
