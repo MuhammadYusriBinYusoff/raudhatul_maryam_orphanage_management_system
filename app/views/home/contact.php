@@ -147,7 +147,7 @@
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
 
                             <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-secondary" href="<?= BASE_URL; ?>/home/contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            <a class="text-secondary" href="<?= BASEURL; ?>/home/contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
