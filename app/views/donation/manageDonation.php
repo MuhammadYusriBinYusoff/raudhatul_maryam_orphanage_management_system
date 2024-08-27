@@ -3,30 +3,40 @@
 
 <head>
     <script>
-            
-        function validate()
-        {
-            if(document.reqForm.itemName.value == "")
-            {
+        function validate() {
+            if (document.reqForm.itemName.value == "") {
                 alert("Please provide ITEM NAME !");
                 document.reqForm.itemName.focus();
                 return false;
             }
-            if(document.reqForm.quantity.value == ""){
+            if (document.reqForm.quantity.value == "") {
                 alert("Please provide ITEM QUANTITY !");
                 document.reqForm.itemName.focus();
                 return false;
             }
-            if(document.reqForm.requestDate.value == ""){
+            if (document.reqForm.requestDate.value == "") {
                 alert("Please provide DATE !");
                 document.reqForm.itemName.focus();
                 return false;
             }
-            return(true);
+            return (true);
 
         }
     </script>
-    
+
+    <style>
+        .view-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -50,67 +60,68 @@
             <h5 class="text-primary text-uppercase">" Quality is everyone's reponsibility" ~ W. Edwards Deming</h5>
             <h1>Item Info</h1>
         </div>
- 
-    
-        
-    
+
+
+
+
         <!-- Start table tag -->
-        <div class = 'request-header'>
-            <div class = 'view-info'> 
-            <form method ="post" action ="<?= BASEURL; ?>/index.php" name="viewForm">
-                <table width="600" border="1" cellspacing="0" cellpadding="3">
-             
-                <!-- Print table heading -->
-                <tr>
-                <td align="center"><strong>Id</strong></td>
-                <td align="center"><strong>Item Name</strong></td>
-                <td align="center"><strong>Quantity</strong></td>
-                <td align="center"><strong>Unit</strong></td>
-                <td align="center"><strong>Category</strong></td>
-                <td align="center"><strong>Dates</strong></td>
-                <td align="center"><strong>Update</strong></td>
-                <td align="center"><strong>Delete</strong></td>
-                </tr>
-    
-                <?php
-                    // output data of each row
-                    $_SESSION["VIP1"] = "student";
-                    foreach ($data as $rows): //nak fetch or retrieve data intil complete from the row kite je...not other people row
-                ?>
-    
-                <tr>
-                    <td align="center"><?= $rows['itemId']; ?></td>
-                    <td align="center"><?= $rows['itemName']; ?></td>
-                    <td align="center"><?= $rows['itemQuantity']; ?></td>
-                    <td align="center"><?= $rows['unit']; ?></td>
-                    <td align="center"><?= $rows['category']; ?></td>
-                    <td align="center"><?= $rows['dates']; ?></td>
-                    <td align="center"> <a href="<?= BASEURL; ?>/donation/searchRequest/<?= $rows['itemId'];?>"><i class="fa fa-pen text-primary me-2"></i></a> </td>
-                    <td align="center"> <a href="<?= BASEURL; ?>/donation/deleteRequest/<?= $rows['itemId']; ?>"><i class="fa fa-trash text-primary me-2"></i></a> </td>
-                </tr>
-    
-                <?php endforeach; ?>
-             </table>
-    
-             <input class='done-button' value="Done" type="submit">
-            </form>
-            </div> 
-        </div> 
+        <div class='request-header'>
+            <div class='view-info'>
+                <form method="post" action="<?= BASEURL; ?>/index.php" name="viewForm">
+                    <table width="600" border="1" cellspacing="0" cellpadding="3">
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+                        <!-- Print table heading -->
+                        <tr>
+                            <td align="center"><strong>Id</strong></td>
+                            <td align="center"><strong>Item Name</strong></td>
+                            <td align="center"><strong>Quantity</strong></td>
+                            <td align="center"><strong>Unit</strong></td>
+                            <td align="center"><strong>Category</strong></td>
+                            <td align="center"><strong>Dates</strong></td>
+                            <td align="center"><strong>Update</strong></td>
+                            <td align="center"><strong>Delete</strong></td>
+                        </tr>
+
+                        <?php
+                        // output data of each row
+                        $_SESSION["VIP1"] = "student";
+                        foreach ($data as $rows): //nak fetch or retrieve data intil complete from the row kite je...not other people row
+                        ?>
+
+                            <tr>
+                                <td align="center"><?= $rows['itemId']; ?></td>
+                                <td align="center"><?= $rows['itemName']; ?></td>
+                                <td align="center"><?= $rows['itemQuantity']; ?></td>
+                                <td align="center"><?= $rows['unit']; ?></td>
+                                <td align="center"><?= $rows['category']; ?></td>
+                                <td align="center"><?= $rows['dates']; ?></td>
+                                <td align="center"> <a href="<?= BASEURL; ?>/donation/searchRequest/<?= $rows['itemId']; ?>"><i class="fa fa-pen text-primary me-2"></i></a> </td>
+                                <td align="center"> <a href="<?= BASEURL; ?>/donation/deleteRequest/<?= $rows['itemId']; ?>"><i class="fa fa-trash text-primary me-2"></i></a> </td>
+                            </tr>
+
+                        <?php endforeach; ?>
+                    </table>
+                    <br>
+                    <br>
+                    <input class='done-button' value="Done" type="submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= BASEURL; ?>/lib/easing/easing.min.js"></script>
-    <script src="<?= BASEURL; ?>/lib/waypoints/waypoints.min.js"></script>
-    <script src="<?= BASEURL; ?>/lib/counterup/counterup.min.js"></script>
-    <script src="<?= BASEURL; ?>/lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="<?= BASEURL; ?>/lib/easing/easing.min.js"></script>
+        <script src="<?= BASEURL; ?>/lib/waypoints/waypoints.min.js"></script>
+        <script src="<?= BASEURL; ?>/lib/counterup/counterup.min.js"></script>
+        <script src="<?= BASEURL; ?>/lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="<?= BASEURL; ?>/js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="<?= BASEURL; ?>/js/main.js"></script>
 </body>
 
 </html>

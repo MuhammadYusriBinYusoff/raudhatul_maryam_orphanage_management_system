@@ -106,7 +106,7 @@
   
   /*-- end reset --*/
   body {
-    background-image:url(../../assets/orphanageimage.jpg);
+    background-image: url('http://localhost/Activity-PHP/raudhatul_maryam_orphanage_management_system/public/assets/orphanageimage.jpg');
     background-size:cover;
     background-attachment:fixed;
     /* fallback for old browsers */

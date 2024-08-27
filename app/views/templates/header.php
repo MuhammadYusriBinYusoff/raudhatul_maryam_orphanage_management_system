@@ -123,12 +123,12 @@
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="<?= BASEURL; ?>/donation/requestDonation" class="dropdown-item">Request Donation</a>
                         <a href="<?= BASEURL; ?>/donation" class="dropdown-item"><i class="fa fa-eye text-primary me-2"></i>My Request</a>
-                        <a href="<?= BASEURL; ?>/donation/manageDonation.php" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
+                        <a href="<?= BASEURL; ?>/donation/manageDonation" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>Manipulate Item Request</a>
                         <a href="<?= BASEURL; ?>/history/viewHistory" class="dropdown-item"><i class="fa fa-history text-primary me-2"></i>History</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Storage</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Storage</a>
                     <div class="dropdown-menu rounded-0 m-0">
                         <a href="<?= BASEURL; ?>/inventory" class="dropdown-item"><i class="fa fa-plus text-primary me-2"></i>add item</a>
                         <a href="<?= BASEURL; ?>/inventory/editInventoryPage" class="dropdown-item"><i class="fa fa-pen-square text-primary me-2"></i>edit Item</a>
